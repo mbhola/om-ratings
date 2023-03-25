@@ -1,0 +1,20 @@
+{
+  "packageDirectories": [
+    {
+      "path": "force-app",
+      "default": true,
+      "package": "OM Ratings",
+      "versionName": "ver 0.1",
+      "versionNumber": "0.1.0.NEXT",
+      "versionDescription": ""
+    }
+  ],
+  "name": "ompackage1",
+  "namespace": "mbsfns",
+  "sfdcLoginUrl": "https://login.salesforce.com",
+  "sourceApiVersion": "56.0",
+  "packageAliases": {
+    "OM Ratings": "0HoDn000000wkF5KAI",
+    "OM Ratings@0.1.0-1": "04tDn000000v29DIAQ"
+  }
+}
