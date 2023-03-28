@@ -2,6 +2,8 @@
 <ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Rating_only_for_fulfilled_order</fullName>
     <active>true</active>
-    <errorConditionFormula>ISPICKVAL(Order_Summary__r.Status, &quot;Fulfilled&quot;)</errorConditionFormula>
+    <errorConditionFormula>AND( ISNEW(),
+ISPICKVAL(Order_Summary__r.Status, &quot;Fulfilled&quot;)
+)</errorConditionFormula>
     <errorMessage>Rating and review can only be provided after the Order is Fulfilled</errorMessage>
 </ValidationRule>
