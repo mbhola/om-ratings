@@ -2,7 +2,7 @@
   "packageDirectories": [
     {
       "path": "force-app",
-      "default": true,
+      "default": false,
       "package": "OM Ratings",
       "versionName": "ver 0.1",
       "versionNumber": "0.2.0.NEXT",
@@ -12,10 +12,11 @@
     {
       "path": "force-app",
       "package": "OM Ratings1",
-      "versionName": "ver 0.1",
-      "versionNumber": "0.1.0.NEXT",
-      "default": false,
-      "versionDescription": ""
+      "versionName": "ver 0.2",
+      "versionNumber": "0.2.0.NEXT",
+      "ancestorVersion": "HIGHEST",
+      "default": true,
+      "versionDescription": "OM Ratings version with updated Validation Rule"
     }
   ],
   "name": "ompackage1",
@@ -28,6 +29,7 @@
     "OM Ratings@0.1.0-2": "04tDn000000v29wIAA",
     "OM Ratings1": "0HoDn000000wkFAKAY",
     "OM Ratings1@0.1.0-1": "04tDn000000v2A1IAI",
-    "OM Ratings@0.2.0-1": "04tDn000000v2AfIAI"
+    "OM Ratings@0.2.0-1": "04tDn000000v2AfIAI",
+    "OM Ratings1@0.2.0-1": "04tDn000000v2AkIAI"
   }
 }
