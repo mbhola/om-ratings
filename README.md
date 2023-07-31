@@ -49,8 +49,8 @@
 ## Test the Package
 
  - Add the Rating and Review for the Order by using Salesforce Postman Collection (below) OR directly add in Org at App Launcher -> Order Management -> Order Summaries -> Select Order Summary -> Related -> Order Ratings
-     https://github.com/jbachelet/sf-som-postman-collection
-     https://github.com/forcedotcom/postman-salesforce-apis
+     - https://github.com/jbachelet/sf-som-postman-collection
+     - https://github.com/forcedotcom/postman-salesforce-apis
    
    ![image](https://github.com/mbhola/om-ratings/assets/33846806/c2870926-52ac-4317-830e-3db82aaac238)
 
