@@ -1,5 +1,10 @@
 # Very basic package created to learn 2GP packaging by adding a new feature to Order Management
 
+## Pre-requisite
+
+-  Ensure your org is provisioned with Order Management
+     - https://partners.salesforce.com/0694V00000KAZwJQAX
+
 ## Package Features
 
  - Add Rating and Review for Order on the customer's expereince about delivery experience of the order
@@ -9,21 +14,21 @@
 
    1. Register Namespace
       - Make PBO org as DevHub
-          Setup >> Dev Hub, and enable Dev Hub and Second-generation packaging
+          - Setup >> Dev Hub, and enable Dev Hub and Second-generation packaging
       - Create a unique namespace in a developer edition org from your Environment Hub
-          App Launcher >> Environment Hub and create a developer edition org
-          In developer edition org and go to Setup >> Package Manager >> Namespace Settings >> Edit and create a unique namespace
+          - App Launcher >> Environment Hub and create a developer edition org
+          - In developer edition org and go to Setup >> Package Manager >> Namespace Settings >> Edit and create a unique namespace
       - Register that namespace to your DevHub
-          Dev Hub org, go to App Launcher >> Namespace Registries >> Link Namespace
+          - Dev Hub org, go to App Launcher >> Namespace Registries >> Link Namespace
    
    2. Dev+Test in Scratch Org 
       - Create a scratch org to develop and test your app
-          Auth CLI to Dev Hub Org sf org login web -d -a myDevHubAlias
-          Make sure your project-scratch-def.json file has the org shape
-          Replace namespace in sfdx-project.json with one created above
-          Create a scratch org with sf org create scratch -f config/project-scratch-def.json -a MyScratchOrg --set-default
-      - Develop and test your app in Scratch org and pull changes once done with sf retrieve metadata
-      - Stage and Commit changes to git, then push to your branch in the remote repo
+          - Auth CLI to Dev Hub Org sf org login web -d -a myDevHubAlias
+          - Make sure your project-scratch-def.json file has the org shape
+          - Replace namespace in sfdx-project.json with one created above
+          - Create a scratch org with sf org create scratch -f config/project-scratch-def.json -a MyScratchOrg --set-default
+      - Develop and test your app in Scratch org and pull changes once done with sf retrieve metadata (or clone this repo)
+      - Stage and Commit changes to git, then push to your branch in the remote repo (n/a if cloning this repo)
    
    3. Package the App
       - Create your package with sf package create -n "My Package Name" -r force-app -t Managed
@@ -35,8 +40,8 @@
 
 ## Install Package
 
- - Package install using 2GP install command: example: sfdx force:package:install --package "OM Ratings@0.3.0-1" --targetusername mbomtrial -w 10
- - Further added the related list to record page: Setup -> Object Manager -> Order Summary Object -> Page Layout -> Drag OM Ratings related list
+ - Package install using 2GP install command to your org, example: sfdx force:package:install --package "OM Ratings@0.3.0-1" --targetusername mbomtrial -w 10
+ - Ensure to add the related list to record page: Setup -> Object Manager -> Order Summary Object -> Page Layout -> Drag OM Ratings related list
  - Add Rating and Review for an Order: Navigate to Order Management App -> Order Summary -> Related -> Order Ratings
 
 <img width="1911" alt="image" src="https://user-images.githubusercontent.com/33846806/229158766-823a34d7-389c-4d1a-b9ac-6d6902acc9f2.png">
