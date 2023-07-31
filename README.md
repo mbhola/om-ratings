@@ -2,7 +2,7 @@
 
 ## Pre-requisite
 
--  Ensure your org is provisioned with Order Management
+-  Ensure you have Partner Business Org and your org is provisioned with Order Management
      - https://partners.salesforce.com/0694V00000KAZwJQAX
 
 ## Package Features
